@@ -303,6 +303,10 @@ footer div.social {
 
 @media (max-width: 575px) {
 
+  section.services .icons p {
+    font-size: 0.8rem;
+  }
+
   header .second p {
     font-size: 1.8rem;
   }
@@ -351,13 +355,20 @@ footer div.social {
     font-size: 3.5rem;
   }
 
+  section.services .icons span {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
   section.services .icons > div {
     display: flex;
     flex-direction: row;
   }
 
-  section.services .icons > div >div {
-    padding: 1.2rem 0.5rem;
+  section.services .icons > div > div {
+    padding: 1.2rem 0.8rem;
   }
 
   section.portfolio {
