@@ -12,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
   color: #222;
-  padding-bottom: 300px;
 }
 
 .d-flex {
@@ -59,6 +58,8 @@ section h5 {
   font-style: italic;
   letter-spacing: 0.05rem;
 }
+
+
 
 
 
@@ -196,17 +197,24 @@ section.services .icons p {
 
 
 
-
 /* Portfolio */
 
 section.portfolio {
   background-color: #f7f7f7;
+  padding-bottom: 6rem;
+}
+
+.portfolio .cards > div {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio .cards > div > div {
+  height: 100%;
 }
 
 .portfolio .card {
   flex-direction: column;
   background-color: #fff;
-  margin-bottom: 2rem;
 }
 
 .portfolio .card .card_text h3 {
@@ -228,5 +236,78 @@ section.portfolio {
 
 
 
+
+/* Footer */
+
+footer .row {
+  justify-content: flex-start;
+}
+
+footer .row div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .row p {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+footer ul {
+    margin: 48px auto;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 0;
+    display: inline-block;
+}
+
+footer ul li i {
+    font-size: 2rem;
+    background: #222;
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: $transition;
+}
+
+.fab {
+  line-height: 4rem;
+}
+
+footer ul li i:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+
+    footer .row {
+        flex-direction: column-reverse;
+    }
+
+    footer .row div {
+        text-align: center;
+    }
+
+    footer ul {
+        margin: 2rem 0 1rem;
+    }
+
+    section.portfolio {
+      padding-bottom: 0;
+    }
+
+}
 
 /* dodać MQ na <MD size na flex-column dla 'row icons' */
