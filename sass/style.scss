@@ -178,6 +178,12 @@ section.services .icons span {
   height: 6rem;
 }
 
+section.services .icons > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 section.services .icons h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -191,6 +197,7 @@ section.services .icons p {
   word-spacing: 0.08rem;
   line-height: 1.5rem;
   margin: 0;
+  text-align: justify;
 }
 
 
@@ -342,6 +349,15 @@ footer div.social {
 
   header .second h1 {
     font-size: 3.5rem;
+  }
+
+  section.services .icons > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.services .icons > div >div {
+    padding: 1.2rem 0.5rem;
   }
 
   section.portfolio {
